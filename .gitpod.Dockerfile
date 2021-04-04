@@ -1,4 +1,4 @@
-FROM nixos/nix
+FROM nixpkgs/nix
 
 RUN set -ex && apk --no-cache add sudo
 RUN echo "sandbox = true" > /etc/nix/nix.conf
